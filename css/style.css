@@ -25,15 +25,18 @@
 }
 .header-block {
     font-family: Mon-med;
-    padding-top: 38px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 39px;
 }
 .UI-block {
     font-family: Mon-med;
-    padding-top: 38px;
     display: flex;
     justify-content: space-between;
+}
+.logo-header {
+    width: 100%;
 }
 .header-nav {
     max-width: 616px;
@@ -186,6 +189,8 @@
     width: 25%;
     border-color: #10C9C3;
 }
+
+
 /*process*/
 .process-block {
     display: flex;
@@ -234,11 +239,12 @@
     flex-wrap: wrap;
 }
 .spec-block-info {
+    margin-bottom: 39px;
     max-width: 236px;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 .spec-title {
     text-transform: uppercase;
@@ -294,23 +300,73 @@
 .need {
     background-color: #F5F5F5;
 }
+.need-block {
+    max-width: 671px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding-left: 80px;
+}
 .need-block-content {
     display: flex;
+    justify-content: center; 
 }
 .need-info {
     width: 100%;
-    display: flex;
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .need-block-text {
     text-align: center;
     width: 550px;
-    margin-bottom: 40px;
+    margin: 0;
     padding-top: 100px;
+    max-width: 620px;
+    max-width: 600px;
+    margin-bottom: 37px;
 }
 .need-block-text-info {
     font-family: Mon-reg;
     line-height: 1.7;
+}
+.need-button {
+    text-transform: uppercase;
+    color: white;
+    padding: 23px 35px;
+    background-color: #10C9C3;
+    text-decoration: none;
+    font-family: Mon-med;
+    font-size: 14px;
+    width: 181px;
+    margin-left: 185px;
+    margin-bottom: 100px;
+}
+.input {
+    border: none;
+    background-color: white;
+    font-family: Mon-reg;
+    font-size: 15px;
+    margin-bottom: 29px;
+    padding: 19px 0px;
+    padding-left: 21px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.input__enter-1 {
+    width: 45%;
+}
+.input__enter-2 {
+    width: 49%;
+}
+.input__enter-4 {
+    padding-bottom: 171px;
 }
 /*footer*/
 .footer {
@@ -542,5 +598,24 @@ justify-content: space-between;}
     .nav {
         display: none;
     }
-    .lofo-header
+}
+/*Анимация*/
+.nav-item:hover {
+    color: #0e807c;
+}
+.button {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+}
+
+a.button {
+	color: white;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }
